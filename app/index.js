@@ -1,10 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-function App() {
-  return <h1>Hello, from React!</h1>;
-}
+import App from './components/App'
 
-const root = document.getElementById("root");
+const root = document.getElementById('root')
 
-ReactDOM.render(<App />, root);
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  root,
+)

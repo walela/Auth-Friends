@@ -10,9 +10,9 @@ let nextId = 7
 let friends = [
   {
     id: 1,
-    name: 'Rachel Green',
+    name: 'Paul Petrovich Keres',
     age: 30,
-    email: 'rachel@friends.com',
+    email: 'keres@friends.com',
   },
   {
     id: 2,
