@@ -52,3 +52,31 @@ nav img {
 #logout {
   color: firebrick;
 }
+
+.login-form {
+  margin-top: 5%;
+  margin-left: 35%;
+}
+
+fieldset {
+  border: 2px solid rgb(17, 3, 27);
+  border-radius: 5px;
+  font-family: Ropa Sans;
+  font-size: 1.8rem;
+  width: 320px;
+  min-height: 180px;
+  padding: 18px 36px;
+}
+
+input {
+  font-family: "Old Standard TT";
+  padding: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+fieldset button {
+  font-family: monospace;
+  font-size: 1.25rem;
+  padding: 12px 24px;
+}
