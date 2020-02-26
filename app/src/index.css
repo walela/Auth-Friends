@@ -90,7 +90,7 @@ h2 {
 }
 .friends-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .friend {
@@ -125,4 +125,8 @@ h2 {
   font-family: monospace;
   font-size: 1.25rem;
   padding: 16px 24px;
+}
+.new-friend {
+  margin-top: 5%;
+  margin-left: 35%;
 }

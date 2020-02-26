@@ -30,24 +30,32 @@ const AddFriend = () => {
       .catch(err => console.error(err))
   }
   return (
-    <div>
-      <input
-        name='name'
-        placeholder='Name'
-        value={newFriend.name}
-        onChange={handleInputChange}
-      />
-      <input name='age' placeholder='Age' value={newFriend.age} onChange={handleInputChange} />
-      <input
-        name='email'
-        type='email'
-        placeholder='Email'
-        value={newFriend.email}
-        onChange={handleInputChange}
-      />
-      <button className='submit-friend' onClick={submitFriend}>
-        Add Friend
-      </button>
+    <div className='new-friend'>
+      <fieldset>
+        <legend>Add Friend</legend>
+        <input
+          name='name'
+          placeholder='Name'
+          value={newFriend.name}
+          onChange={handleInputChange}
+        />
+        <input
+          name='age'
+          placeholder='Age'
+          value={newFriend.age}
+          onChange={handleInputChange}
+        />
+        <input
+          name='email'
+          type='email'
+          placeholder='Email'
+          value={newFriend.email}
+          onChange={handleInputChange}
+        />
+        <button className='submit-friend' onClick={submitFriend}>
+          Add Friend
+        </button>
+      </fieldset>
     </div>
   )
 }
