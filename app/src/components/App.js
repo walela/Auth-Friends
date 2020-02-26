@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Header from './Header'
 import Login from './Login'
 import Friends from './Friends'
+import AddFriend from "./AddFriend"
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <PrivateRoute path='/friends'>
           <Friends />
+        </PrivateRoute>
+        <PrivateRoute exact path="/add">
+            <AddFriend />
         </PrivateRoute>
       </Switch>
     </div>

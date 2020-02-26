@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import axios from '../helpers/axiosWithAuth'
 import Friend from './Friend'
 
@@ -20,6 +21,9 @@ const Friends = () => {
           <Friend key={friend.id} name={friend.name} age={friend.age} email={friend.email} />
         ))}
       </div>
+      <Link to='/add'>
+        <button>Add Friend</button>
+      </Link>
     </React.Fragment>
   )
 }

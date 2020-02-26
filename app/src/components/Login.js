@@ -27,7 +27,7 @@ const Login = () => {
   return (
     <div className='login-form'>
       <fieldset>
-        <legend>Login</legend>
+        <legend>Sign In</legend>
         <input
           type='text'
           name='username'
