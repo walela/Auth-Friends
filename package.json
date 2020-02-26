@@ -14,6 +14,6 @@
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "Lambda School",
-  "license": "ISC"
+  "author": "Austin Walela",
+  "license": "MIT"
 }
