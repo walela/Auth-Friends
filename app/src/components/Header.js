@@ -1,7 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 const Header = () => {
+  let history = useHistory()
+
+  const logout = () => {
+    localStorage.removeItem('token')
+    history.push('/login')
+  }
   return (
     <div className='header'>
       <nav>
@@ -18,9 +24,10 @@ const Header = () => {
           <Link to='/login'>
             <button>Sign In</button>
           </Link>
-          <Link to='/logout'>
-            <button id='logout'>Sign Out</button>
-          </Link>
+
+          <button id='logout' onClick={logout}>
+            Sign Out
+          </button>
         </div>
       </nav>
     </div>

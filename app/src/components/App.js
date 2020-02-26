@@ -3,7 +3,6 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 
 import Header from './Header'
 import Login from './Login'
-import Logout from './Logout'
 import Friends from './Friends'
 
 function App() {
@@ -13,9 +12,6 @@ function App() {
       <Switch>
         <Route path='/login'>
           <Login />
-        </Route>
-        <Route path='/logout'>
-          <Logout />
         </Route>
         <PrivateRoute path='/friends'>
           <Friends />
