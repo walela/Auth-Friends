@@ -30,7 +30,7 @@ const AddFriend = () => {
       .catch(err => console.error(err))
   }
   return (
-    <form>
+    <div>
       <input
         name='name'
         placeholder='Name'
@@ -45,8 +45,10 @@ const AddFriend = () => {
         value={newFriend.email}
         onChange={handleInputChange}
       />
-      <button onClick={submitFriend}>Add Friend</button>
-    </form>
+      <button className='submit-friend' onClick={submitFriend}>
+        Add Friend
+      </button>
+    </div>
   )
 }
 

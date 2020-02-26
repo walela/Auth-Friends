@@ -111,5 +111,18 @@ h2 {
 .name h3 {
   font-weight: bold;
   font-size: 1.4rem;
-  color: rgb(168, 96, 28)
+  color: rgb(168, 96, 28);
+}
+#add-friend {
+  font-family: monospace;
+  font-size: 1.25rem;
+  padding: 12px 24px;
+  margin-top: 50px;
+  margin-left: 44%;
+}
+
+.submit-friend {
+  font-family: monospace;
+  font-size: 1.25rem;
+  padding: 16px 24px;
 }

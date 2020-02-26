@@ -22,7 +22,7 @@ const Friends = () => {
         ))}
       </div>
       <Link to='/add'>
-        <button>Add Friend</button>
+        <button id='add-friend'>Add Friend</button>
       </Link>
     </React.Fragment>
   )
